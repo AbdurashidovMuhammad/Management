@@ -1,0 +1,56 @@
+﻿<Window x:Class="LibraryManagment.LibraryWindows.HistoricalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagment.LibraryWindows"
+        mc:Ignorable="d"
+        Title="HistoricalWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <TextBox x:Name="search"
+             Width="160"
+             Height="40"
+             Margin="10,25,630,44"
+             FontSize="17"
+             BorderThickness="2"                  
+             BorderBrush="SkyBlue"/>
+            <Button x:Name="searcher"
+            Content="Search"
+            Width="50"
+            Height="40"
+            Margin="207,24,543,35"
+            Click="searcher_Click">
+
+            </Button>
+
+            <Button x:Name="rent"
+            Width="50"
+            Height="50"
+            Margin="491,29,259,30"
+            Content="Rent"
+            Click="rent_Click"
+            >
+
+            </Button>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="dataGrid" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Column1}" Width="30" />
+                    <DataGridTextColumn Header="Name" Binding="{Binding Column2}" Width="250" />
+                    <DataGridTextColumn Header="Author" Binding="{Binding Column3}" Width="200"/>
+                    <DataGridTextColumn Header="Available" Binding="{Binding Column4}" Width="60" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+    </Grid>
+</Window>

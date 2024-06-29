@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Update="LibraryWindows\ClassBooks.txt">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="LibraryWindows\DetectiveBooks.txt">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="LibraryWindows\FantasyBooks.txt">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="LibraryWindows\HistoricalBooks.txt">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="LibraryWindows\LiteraryBooks.txt">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="LibraryWindows\ReligiousBooks.txt">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	</ItemGroup>
+
+</Project>
